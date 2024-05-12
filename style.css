@@ -1,0 +1,75 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Global Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #FF416C, #FF4B2B, #FF416C); /* Multicolor gradient */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculator {
+    border: 2px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 10px 20px rgba(113, 115, 119, 0.3);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input {
+    grid-column: span 4;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Dark mode background */
+    font-size: 40px;
+    text-align: right;
+    color: #000000; /* Set font color to black for dark mode */
+    outline: none;
+}
+
+button {
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-size: 24px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.equalBtn {
+    background-color: #fb7c14;
+}
+
+.operator {
+    color: #6dee0a;
+}
